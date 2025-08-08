@@ -6,6 +6,7 @@
 4488;Ivani Rios;ADM;Gustavo Paes;77
 7788;Roberta Salgado;RH;Andrea Bernardo;45
 3768;Lucas Arruda;TI;Paulo Goes;90
+4987;Luis Souza;ADM;Gustavo Paes;45
 4123;Caio Vicente;ADM;Fabio Silva;60
 3671;Camila Silva;TI;Maria Cruz;85
 2156;Dalila Souza;CTB;Giulia Fam;67

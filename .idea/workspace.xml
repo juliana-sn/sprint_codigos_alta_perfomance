@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="674f8d20-3a77-401b-a6cd-6f836504079e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint_codigos_alta_perfomance.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aplicacao/Colaborador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/Colaborador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/Colaborador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/Onboarding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/Onboarding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arquivos/Colaboradores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arquivos/Colaboradores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listas/ListaCrescenteColaborador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listas/ListaCrescenteColaborador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <module name="sprint_codigos_alta_perfomance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aplicacao.*" />
+          <option name="PATTERN" value="modelos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

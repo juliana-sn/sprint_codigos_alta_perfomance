@@ -1,4 +1,4 @@
-package aplicacao;
+package modelos;
 
 public class Colaborador {
     private int id;
@@ -49,6 +49,6 @@ public class Colaborador {
 
     @Override
     public String toString() {
-        return id + "  \t" + nome + "  \t" + setor + "   \t" + buddy + "   \t" + nota;
+        return id + "\t" + nome + "\t" + setor + "\t" + buddy + "\t" + nota;
     }
 }

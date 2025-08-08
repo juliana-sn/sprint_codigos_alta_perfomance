@@ -1,6 +1,6 @@
 package listas;
 
-import aplicacao.Colaborador;
+import modelos.Colaborador;
 
 public class ListaCrescenteColaborador {
 
@@ -33,6 +33,8 @@ public class ListaCrescenteColaborador {
 				} else if (aux.prox.dado.getNota() == novo.dado.getNota()) {
 					if (aux.prox.dado.getId() < aux.prox.dado.getId()){
 						aux = aux.prox;
+					}else{
+						achou = true;
 					}
 				} else
 					achou = true;
@@ -44,7 +46,7 @@ public class ListaCrescenteColaborador {
 	public void show(int qtd) {
 		NO aux = lista;
 		int cont = 0;
-		System.out.println("   ID   |  SETOR   |    BUDDY    |   NOTA");
+		System.out.println("============ Lista de Colaboradores ============");
 		while (aux!=null && cont <= qtd) {
 			System.out.print(aux.dado + "\n");
 			aux = aux.prox;

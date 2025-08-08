@@ -1,6 +1,7 @@
 package aplicacao;
 
 import listas.ListaCrescenteColaborador;
+import modelos.Colaborador;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,7 +15,7 @@ public class Onboarding {
 
 		geraLista(listaColaboradores);
 
-		int opcao;
+		int opcao = 4;
 		do {
 			System.out.println("0 - Encerrar atendimento");
 			System.out.println("1 - Obter colaboradores com piores notas presentes na lista");
@@ -46,12 +47,16 @@ public class Onboarding {
 	private static void inserirColaborador() {
 		System.out.print("Insira o ID: ");
 		int id = le.nextInt();
+
 		System.out.print("Insira o nome: ");
 		String nome = le.next();
+
 		System.out.print("Insira o setor: ");
 		String setor = le.next();
+
 		System.out.print("Insira o buddy: ");
 		String buddy = le.next();
+
 		Colaborador colaborador = new Colaborador(id, nome, setor, buddy);
 		listaColaboradores.add(colaborador);
 	}
@@ -88,7 +93,6 @@ public class Onboarding {
 
 			while (leArq.hasNextLine()) {
 				String linha = leArq.nextLine();
-				System.out.println(linha);
 				String[] partes = linha.split(";");
 				int id = Integer.parseInt(partes[0]);
 				String nome = partes[1];
@@ -98,7 +102,6 @@ public class Onboarding {
 				Colaborador colaborador = new Colaborador(id, nome, setor, buddy, nota);
 				listaColaboradores.add(colaborador);
 			}
-
 			leArq.close();
 		} catch (FileNotFoundException e) {
 
