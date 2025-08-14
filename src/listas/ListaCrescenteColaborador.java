@@ -31,7 +31,7 @@ public class ListaCrescenteColaborador {
 				if (aux.prox.dado.getNota() < novo.dado.getNota()){
 					aux = aux.prox;
 				} else if (aux.prox.dado.getNota() == novo.dado.getNota()) {
-					if (aux.prox.dado.getId() < aux.prox.dado.getId()){
+					if (aux.prox.dado.getId() < novo.dado.getId()){
 						aux = aux.prox;
 					}else{
 						achou = true;

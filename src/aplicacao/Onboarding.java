@@ -15,7 +15,7 @@ public class Onboarding {
 
 		geraLista(listaColaboradores);
 
-		int opcao = 4;
+		int opcao;
 		do {
 			System.out.println("0 - Encerrar atendimento");
 			System.out.println("1 - Obter colaboradores com piores notas presentes na lista");
@@ -34,6 +34,7 @@ public class Onboarding {
 					break;
 				case 3:
 					inserirColaborador();
+					break;
 				default:
 					System.out.println("Opcao Invalida");
 			}
@@ -48,14 +49,17 @@ public class Onboarding {
 		System.out.print("Insira o ID: ");
 		int id = le.nextInt();
 
-		System.out.print("Insira o nome: ");
-		String nome = le.next();
+		le.nextLine();
+
+		System.out.println("Insira o nome: ");
+		String nome = le.nextLine();
 
 		System.out.print("Insira o setor: ");
 		String setor = le.next();
 
+		le.nextLine();
 		System.out.print("Insira o buddy: ");
-		String buddy = le.next();
+		String buddy = le.nextLine();
 
 		Colaborador colaborador = new Colaborador(id, nome, setor, buddy);
 		listaColaboradores.add(colaborador);
@@ -85,7 +89,6 @@ public class Onboarding {
 		String caminhoDoArquivo = "src/arquivos/Colaboradores.txt";
 		
 		try {
-			// Criar um objeto File com o caminho do arquivo
 			File arquivo = new File(caminhoDoArquivo);
 
 
